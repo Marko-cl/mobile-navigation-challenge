@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+    <body>
+        <div class="topm" id="topm">
+            <div id="image"><img src="person.png" /></div>
+            <div id="textt">
+               <p style="font-weight: bold;"> JOhn bell</p>
+                <p>Computer Science</p>
+            </div>
+        </div>
+        <div id="hr"><hr /></div>
+        <div class="mid" id="mid">
+            <div id="PD">
+                <div class="img1"><img id="img1" src="pd.png" /></div>
+                <div class="img2"><img id="img2" src="pd.png" /></div>
+                <div class="img3"><img id="img3" src="pd.png" /></div>
+                <div class="img4"><img id="img4" src="pd.png" /></div>
+                <div class="img5"><img id="img5" src="pd.png" /></div>
+            </div>
+
+            <div id="msg">
+                <h3 id="pd">Personal Data</h3>
+                <h3 id="ms">Messages</h3>
+                <h3 id="nots">Notifications</h3>
+                <h3 id="lo">Location</h3>
+                <h3 id="com">Community</h3>
+            </div>
+
+            <div id="comm">
+                <img id="next1" src="next.png" />
+                <img id="next2" src="next.png" />
+                <img id="next3" src="next.png" />
+                <img id="next4" src="next.png" />
+                <img id="next5" src="next.png" />
+            </div>
+        </div>
+        <div id="hr2"><hr /></div>
+        <div class="bottomm" id="bottomm">
+
+            <div id="faq-image">
+            <img id="faq1" src="pd.png">
+            <img id="settings" src="pd.png">
+            </div>
+            <div id="faq-text">
+            <div id="faq-self" >Faqs</div>
+            <div id="faq-settings">Settings</div>
+            </div>
+            <div id="faq-next">
+            <img id="nextf" src="next.png">
+            <img id="nextf1"  src="next.png">
+            </div>
+            </div>
+
+        </div>
+<div id="hr3"><hr></div>
+        <div class="footer" id="footer">
+<div id="home"><img src="pd.png"></div>
+<div id="stats"> <img src="pd.png"></div>
+<div id="email"><img src="pd.png"></div>
+<div id="profile"><img src="pd.png"></div>
+
+
+        </div>
+    </body>
+
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.2fr 0fr 1fr 0fr 0.5fr 0fr 1fr;
+            grid-template-areas:
+                "topm"
+                "hr"
+                "mid"
+                "hr2"
+                "bottomm"
+                "hr3"
+                "footer";height: 100vh;overflow: hidden;background-color: aliceblue;
+        }
+        #topm {
+            grid-area: topm;
+            display: grid;
+            grid-template-columns: 0.4fr 1.6fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "image textt";
+        }
+
+        #image {
+            grid-area: image;align-items: center;text-align: center;justify-content: center;justify-items: center;
+        transform: translateY(20%);
+
+
+        }
+        #textt {
+            grid-area: textt;
+        }
+
+        #hr {
+            grid-area: hr;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        #hr2 {
+            grid-area: hr2;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+#hr3{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+        #mid {
+            grid-area: mid;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "PD msg comm";
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        #PD {
+            grid-area: PD;
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+                "img1"
+                "img2"
+                "img3"
+                "img4"
+                "img5";
+        }
+        #PD img {
+            background-color: gray;
+            border-radius: 7px;
+        }
+        #msg {
+            grid-area: msg;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+                "pd"
+                "ms"
+                "nots"
+                "lo"
+                "com";
+            margin-top: -20px;
+        }
+
+        #comm {
+            grid-area: comm;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+                "next1"
+                "next2"
+                "next3"
+                "next4"
+                "next5";
+            margin-left: 80%;
+        }
+
+        #next5 {
+            margin-top: 10px;
+        }
+        #next4 {
+            margin-top: 5px;
+        }
+        #next3 {
+            margin-top: 2.5px;
+        }
+
+
+        #bottomm {
+            grid-area: bottomm;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+       "faq-image faq-text faq-next"
+     ; text-align: center;
+     padding-top: 20px;
+     padding-bottom: 20px;
+        }
+
+        #faq-image{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+grid-template-areas:
+"faq1"
+"settings"
+;
+align-items: center;text-align: center;justify-content: center;justify-items: center;
+        }
+
+
+        #faq-image img{
+         background-color: gray;
+      border-radius: 7px;
+        }
+
+
+
+#faq-text{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas:
+   "faq-self"
+   "faq-settings"
+    ;align-items: center;text-align: center;justify-content: center;justify-items: center;
+}
+
+#faq-next{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas:
+   "nextf"
+   "nextf1"
+    ;align-items: center;text-align: center;justify-content: center;justify-items: center;
+margin-left: 80%;
+
+}
+
+
+
+
+        #footer {
+            grid-area: footer;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "home stats email profile";margin-left: 70px;position: relative;
+        }
+
+        #home {
+            position: absolute;bottom: 50px;left: 75%;
+        }
+#stats{
+    position: absolute;bottom: 50px;left: 49%;
+
+}
+#email{
+    position: absolute;bottom: 50px;left: 22%;
+
+}
+#profile{
+    position: absolute;bottom: 50px;left: -2%;
+}
+    </style>
+
+    <script></script>
+</html>
